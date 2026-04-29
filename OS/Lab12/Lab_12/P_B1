@@ -1,0 +1,38 @@
+#!/bin/sh
+# 1. Which will print the following menu and execute the given task? 
+# • Display calendar of current month 
+# • Display today's date and time 
+# • Display usernames that are currently logged in the system 
+# • Display your name at given x, y position 
+# • Display your terminal number 
+# • Exit 
+while true
+do
+    echo "----------------------------"
+    echo "1. Display calendar of current month"
+    echo "2. Display today's date and time"
+    echo "3. Display logged-in usernames"
+    echo "4. Display your name at given x,y position"
+    echo "5. Display terminal number"
+    echo "6. Exit"
+    echo "----------------------------"
+    echo "Enter your choice:"
+    read ch
+
+    case $ch in
+        1) cal ;;
+        2) date ;;
+        3) who | awk '{print $1}' ;;
+        4)
+           echo "Enter X position:"
+           read x
+           echo "Enter Y position:"
+           read y
+           tput cup $x $y
+           echo "Your Name"
+           ;;
+        5) tty ;;
+        6) exit ;;
+        *) echo "Invalid choice" ;;
+    esac
+done

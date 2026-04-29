@@ -1,0 +1,23 @@
+# 1. To perform basic mathematical based on choice Using Switch Case.
+#!/bin/bash
+
+echo "1. Addition"
+echo "2. Subtraction"
+echo "3. Multiplication"
+echo "4. Division"
+echo "Enter your choice:"
+read choice
+
+echo "Enter first number:"
+read a
+echo "Enter second number:"
+read b
+
+case $choice in
+  1) echo "Addition = $((a+b))" ;;
+  2) echo "Subtraction = $((a-b))" ;;
+  3) echo "Multiplication = $((a*b))" ;;
+  4) echo "Division = $((a/b))" ;;
+  *) echo "Invalid choice" ;;
+esac
+

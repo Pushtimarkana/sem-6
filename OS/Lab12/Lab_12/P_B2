@@ -1,0 +1,13 @@
+#!/bin/sh
+# 2. To checks whether a given user is valid or not. 
+
+echo "Enter username:"
+read user
+
+if id "$user" >/dev/null 2>&1
+then
+    echo "Valid user"
+else
+    echo "Invalid user"
+fi
+

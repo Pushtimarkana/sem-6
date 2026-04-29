@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Total number of users in the system
+total_users=$(cut -d: -f1 /etc/passwd | wc -l)
+
+# Number of users currently logged in
+logged_in_users=$(who | wc -l)
+
+echo "Total number of users: $total_users"
+echo "Currently logged in users: $logged_in_users"
+
