@@ -1,0 +1,125 @@
+﻿@model HMS.Models.PatientModel
+
+@{
+    ViewData["Title"] = "Patient Form";
+}
+
+<!-- Custom styles (you can move this into your site's CSS later) -->
+<style>
+    .form-section {
+        padding: 30px;
+        border-radius: 20px;
+        background: #ffffff;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    }
+    .form-header {
+        background: linear-gradient(to right, #0d6efd, #4e9fff);
+        color: white;
+        padding: 20px;
+        border-radius: 20px 20px 0 0;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition: 0.3s;
+    }
+    .form-control:focus {
+        box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25); /* Green focus glow */
+        border-color: #198754;
+    }
+
+    .form-control:hover {
+        border-color: #0d6efd;
+        box-shadow: 0 0 5px rgba(13, 110, 253, 0.4);
+        transition: all 0.3s ease;
+    }
+
+    .btn-success:hover {
+        background-color: #157347;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    textarea.form-control:hover {
+        box-shadow: 0 0 5px rgba(13, 110, 253, 0.4);
+    }
+</style>
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            <div class=" form-section card border-0 shadow-lg rounded-4">
+                <div class="form-header ">
+                    <h4>🩺 Patient Registration Form</h4>
+                </div>
+                <div class="card-body p-4">
+
+                    <form asp-controller="Patient" asp-action="PatientAddEdit" method="post">
+                        <input asp-for="PatientID" type="hidden" />
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label asp-for="Name" class="form-label">👤 Name</label>
+                                <input asp-for="Name" class="form-control" placeholder="Enter Full Name" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Gender" class="form-label">⚧️ Gender</label>
+                                <input asp-for="Gender" class="form-control" placeholder="Male / Female / Other" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="DateOfBirth" class="form-label">🎂 Date of Birth</label>
+                                <input asp-for="DateOfBirth" type="datetime-local" class="form-control" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Email" class="form-label">📧 Email</label>
+                                <input asp-for="Email" class="form-control" placeholder="abcd@xyz.com" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="Phone" class="form-label">📞 Phone</label>
+                                <input asp-for="Phone" class="form-control" placeholder="e.g. 9876543210" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="City" class="form-label">🏙️ City</label>
+                                <input asp-for="City" class="form-control" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="State" class="form-label">🌐 State</label>
+                                <input asp-for="State" class="form-control" />
+                            </div>
+
+                            <div class="col-md-6">
+                                <label asp-for="IsActive" class="form-label">✅ Active Status</label>
+                                <input asp-for="IsActive" class="form-control" placeholder="True / False" />
+                            </div>
+
+                            <div class="col-12">
+                                <label asp-for="Address" class="form-label">🏠 Address</label>
+                                <textarea asp-for="Address" class="form-control" rows="2" placeholder="Full address here..."></textarea>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold text-dark">
+                                    <i class="bi bi-person-circle"></i> User
+                                </label>
+                                <select asp-for="UserID" asp-items="@(new SelectList(ViewBag.UserList, "UserID", "UserName"))" class="form-control">
+                                    <option value="">--Select User--</option>
+                                </select>
+                                <span asp-validation-for="UserID" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-success btn-lg shadow-sm">
+                                <i class="bi bi-save"></i> Save Patient
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

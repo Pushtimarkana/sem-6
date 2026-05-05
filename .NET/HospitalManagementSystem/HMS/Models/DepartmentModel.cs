@@ -1,0 +1,22 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace HMS.Models
+{
+    public class DepartmentModel
+    {
+        [Key]
+        public int DepartmentID { get; set; }
+        public string DepartmentName { get; set; }
+        public string Description { get; set; }
+        public int IsActive { get; set; }
+        public DateTime? Created { get; set; }
+
+        public DateTime? Modified { get; set; }
+        public int UserID { get; set; }
+    }
+    public class DepartmentDropDownModel
+    {
+        public int DepartmentID { get; set; }
+        public string DepartmentName { get; set; }
+    }
+}

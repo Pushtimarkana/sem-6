@@ -1,0 +1,64 @@
+﻿@using System.Data
+@model System.Data.DataTable
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<h2 class="my-4 text-primary fw-bold">🩺 Doctor Department List</h2>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success text-center fw-semibold">@TempData["Message"]</div>
+}
+
+<div class="table-responsive shadow-sm rounded-4 border">
+    <table class="table table-bordered table-hover align-middle text-center mb-0">
+        <thead class="table-primary text-white align-middle">
+            <tr>
+                <th>DoctorDept ID <br><i class="bi bi-hash text-warning fs-7"></i></th>
+                @* <th>Doctor ID <br><i class="bi bi-person-vcard text-info fs-7"></i></th> *@
+                <th>Doctor Name <br><i class="bi bi-person-vcard text-info fs-7"></i></th>
+                @* <th>Department ID <br><i class="bi bi-diagram-3-fill text-dark fs-7"></i></th> *@
+                <th>Department Name <br><i class="bi bi-diagram-3-fill text-dark fs-7"></i></th>
+
+                <th>Created <br><i class="bi bi-calendar-plus text-success fs-6"></i></th>
+                <th>Modified <br><i class="bi bi-pencil-square text-warning fs-6"></i></th>
+                <th>User ID <br><i class="bi bi-person-circle text-secondary fs-6"></i></th>
+                <th class="col-2">Action <br><i class="bi bi-tools text-danger fs-5"></i></th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            @foreach (DataRow dr in Model.Rows)
+            {
+                <tr>
+                    <td>@dr["DoctorDepartmentID"]</td>
+                    @* <td>@dr["DoctorID"]</td> *@
+                    <td>@dr["Name"]</td>
+                    @* <td>@dr["DepartmentID"]</td> *@
+                    <td>@dr["DepartmentName"]</td>
+                    <td>@Convert.ToDateTime(dr["Created"]).ToString("dd MMM yyyy")</td>
+                    <td>@Convert.ToDateTime(dr["Modified"]).ToString("dd MMM yyyy")</td>
+                    <td>@dr["UserID"]</td>
+                    <td>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a class="btn btn-sm btn-outline-primary"
+                               asp-controller="DoctorDepartment"
+                               asp-action="DoctorDepartmentEdit"
+                               asp-route-DoctorDepartmentID="@dr["DoctorDepartmentID"]"
+                               title="Edit">
+                                <i class="bi bi-pencil-fill"></i> Edit
+                            </a>
+                            <a class="btn btn-sm btn-outline-danger"
+                               asp-controller="DoctorDepartment"
+                               asp-action="DoctorDepartmentDelete"
+                               asp-route-DoctorDepartmentID="@dr["DoctorDepartmentID"]"
+                               onclick="return confirm('⚠ Are you sure you want to delete this record?');"
+                               title="Delete">
+                                <i class="bi bi-trash-fill"></i> Delete
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

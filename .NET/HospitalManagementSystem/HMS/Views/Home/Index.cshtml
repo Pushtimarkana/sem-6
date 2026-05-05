@@ -1,0 +1,274 @@
+﻿@{
+    ViewBag.Title = "Hospital Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid px-4 mt-4">
+    <h2 class="mb-4 fw-bold text-primary">🏥 Hospital Dashboard</h2>
+
+    <!-- Top Stats -->
+    <div class="row g-4">
+        <!-- Patients -->
+        <div class="col-md-3">
+            <div class="card stat-card border-0 shadow-lg rounded-4">
+                <div class="card-body text-center">
+                    <i class="bi bi-people-fill text-primary fs-1 mb-2"></i>
+                    <h6 class="fw-semibold text-secondary">Patients</h6>
+                    <h3 class="fw-bold text-primary">@ViewBag.TotalPatients</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Doctors -->
+        <div class="col-md-3">
+            <div class="card stat-card border-0 shadow-lg rounded-4">
+                <div class="card-body text-center">
+                    <i class="bi bi-person-badge-fill text-success fs-1 mb-2"></i>
+                    <h6 class="fw-semibold text-secondary">Doctors</h6>
+                    <h3 class="fw-bold text-success">@ViewBag.TotalDoctors</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Departments -->
+        <div class="col-md-3">
+            <div class="card stat-card border-0 shadow-lg rounded-4">
+                <div class="card-body text-center">
+                    <i class="bi bi-building text-info fs-1 mb-2"></i>
+                    <h6 class="fw-semibold text-secondary">Departments</h6>
+                    <h3 class="fw-bold text-info">@ViewBag.TotalDepartments</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Users -->
+        <div class="col-md-3">
+            <div class="card stat-card border-0 shadow-lg rounded-4">
+                <div class="card-body text-center">
+                    <i class="bi bi-person-circle text-warning fs-1 mb-2"></i>
+                    <h6 class="fw-semibold text-secondary">Users</h6>
+                    <h3 class="fw-bold text-warning">@ViewBag.TotalUsers</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd Row Stats -->
+    <div class="row g-4 mt-2">
+        <!-- Doctor Departments -->
+        <div class="col-md-3">
+            <div class="card stat-card border-0 shadow-lg rounded-4">
+                <div class="card-body text-center">
+                    <i class="bi bi-diagram-3-fill text-danger fs-1 mb-2"></i>
+                    <h6 class="fw-semibold text-secondary">Doctor Departments</h6>
+                    <h3 class="fw-bold text-danger">@ViewBag.TotalDoctorDepartments</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Today Appointments -->
+        <div class="col-md-3">
+            <div class="card stat-card border-0 shadow-lg rounded-4">
+                <div class="card-body text-center">
+                    <i class="bi bi-calendar-check-fill text-success fs-1 mb-2"></i>
+                    <h6 class="fw-semibold text-secondary">Today’s Appointments</h6>
+                    <h3 class="fw-bold text-success">@ViewBag.TodayAppointments</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Appointments -->
+        <div class="col-md-3">
+            <div class="card stat-card border-0 shadow-lg rounded-4">
+                <div class="card-body text-center">
+                    <i class="bi bi-calendar-event-fill text-primary fs-1 mb-2"></i>
+                    <h6 class="fw-semibold text-secondary">All Appointments</h6>
+                    <h3 class="fw-bold text-primary">@ViewBag.TotalAppointments</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Earnings -->
+        <div class="col-md-3">
+            <div class="card stat-card border-0 shadow-lg rounded-4">
+                <div class="card-body text-center">
+                    <i class="bi bi-cash-stack text-success fs-1 mb-2"></i>
+                    <h6 class="fw-semibold text-secondary">Monthly Earnings</h6>
+                    <h5 class="fw-bold text-success">₹@ViewBag.MonthlyEarnings</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Section -->
+    <div class="row mt-4">
+        <!-- Appointment Status Chart -->
+        <div class="col-md-6">
+            <div class="card border-0 shadow-lg rounded-4">
+                <div class="card-body">
+                    <h5 class="fw-semibold text-dark mb-3">📊 Appointments Overview</h5>
+                    <canvas id="appointmentsChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Patients Growth Chart -->
+        <div class="col-md-6">
+            <div class="card border-0 shadow-lg rounded-4">
+                <div class="card-body">
+                    <h5 class="fw-semibold text-dark mb-3">📈 Patients Growth</h5>
+                    <canvas id="patientsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mt-4">
+        <div class="card border-0 shadow-lg rounded-4 doctor-card">
+            <!-- Card Header -->
+            <div class="card-header border-0 text-white rounded-top-4 p-3 d-flex align-items-center"
+                 style="background: linear-gradient(135deg, #4e9fff, #2563eb);">
+                <i class="bi bi-hospital fs-4 me-2"></i>
+                <h6 class="mb-0 fw-semibold">Doctors by Specialization</h6>
+            </div>
+
+            <!-- Card Body -->
+            <div class="card-body">
+                <div class="chart-container p-2">
+                    <canvas id="doctorSpecializationChart" height="200"></canvas>
+                </div>
+            </div>
+
+            <!-- Card Footer -->
+            <div class="card-footer bg-light border-0 text-end">
+                <a href="/Doctors/Specialization" class="text-decoration-none fw-semibold small text-primary">
+                    View Details <i class="bi bi-arrow-right-circle-fill ms-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+   
+
+    
+
+
+
+</div>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- Custom CSS -->
+<style>
+    .doctor-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .doctor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+    .chart-container {
+        height: 220px;
+        position: relative;
+    }
+</style>
+<script>
+    var ctx1 = document.getElementById('appointmentsChart').getContext('2d');
+    var appointmentsChart = new Chart(ctx1, {
+        type: 'doughnut',
+        data: {
+            labels: ['Pending', 'Completed', 'Cancelled','Confirmed'],
+            datasets: [{
+                data: [@ViewBag.PendingAppointments, @ViewBag.CompletedAppointments, @ViewBag.CancelledAppointments,@ViewBag.ConfirmedAppointments],
+                 backgroundColor: ['#f7b731','#20bf6b','#eb3b5a','blue']
+                // backgroundColor: ['#ffe29a', '#a8e6cf', '#ffb3b3', '#a3c9f9']
+            }]
+        },
+        options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
+    });
+
+    var ctx2 = document.getElementById('patientsChart').getContext('2d');
+    var patientsChart = new Chart(ctx2, {
+        type: 'line',
+        data: {
+            labels: ['Jan','Feb','Mar','Apr','May','Jun'],
+            datasets: [{
+                label: 'Patients',
+                data: [10, 25, 40, 30, 50, 70], // You can pass dynamic ViewBag.PatientGrowthData here
+                borderColor: '#4e9fff',
+                backgroundColor: 'rgba(78,159,255,0.2)',
+                fill: true,
+                tension: 0.4,
+                pointRadius: 5,
+                pointHoverRadius: 8
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: { legend: { display: false } }
+        }
+    });
+</script>
+<script>
+    async function loadDoctorSpecialization() {
+        const response = await fetch('/Home/GetDoctorSpecialization');
+        const data = await response.json();
+
+        const labels = data.map(d => d.specialization);
+        const counts = data.map(d => d.count);
+
+        new Chart(document.getElementById("doctorSpecializationChart"), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Doctors',
+                    data: counts,
+                    backgroundColor: '#4e9fff',
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                indexAxis: 'y', // horizontal bar
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    x: { beginAtZero: true, ticks: { stepSize: 1 } },
+                    y: { grid: { display: false } }
+                }
+            }
+        });
+    }
+    loadDoctorSpecialization();
+</script>
+
+
+
+
+<!-- Custom Styles -->
+<style>
+    .stat-card {
+        background: #ffffff;
+        transition: all 0.3s ease;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+        font-size: 2rem;
+    }
+
+    .card h6 {
+        font-size: 0.95rem;
+        letter-spacing: 0.5px;
+    }
+
+    .fw-semibold {
+        font-weight: 600 !important;
+    }
+</style>

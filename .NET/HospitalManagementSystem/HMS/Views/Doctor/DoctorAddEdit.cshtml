@@ -1,0 +1,91 @@
+﻿@model HMS.Models.DoctorModel
+
+
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-8">
+            <div class="card shadow rounded-4 border-0">
+                <div class="card-header bg-primary text-white text-center rounded-top-4">
+                    <h4 class="mb-0">Doctor Form</h4>
+                </div>
+                <div class="card-body">
+
+                    <form asp-controller="Doctor" asp-action="DoctorAddEdit" method="post">
+                       
+                        <input asp-for="DoctorID" type="hidden" />
+
+                        <div class="row">
+                            <div class="col-6 ">
+                                <label asp-for="Name" class="form-label">Name</label>
+                                <input asp-for="Name" class="form-control"/>
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-6">
+                                <label asp-for="Phone" class="form-label"> Phone</label>
+                                <input asp-for="Phone" class="form-control" placeholder="1234567890" />
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
+                        </div>
+
+
+                        <div class="mb-3">
+                            <label asp-for="Email" class="form-label">Email </label>
+                            <input asp-for="Email"  class="form-control" placeholder="abcd123@example.com" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Qualification" class="form-label">Qualification</label>
+                            <input asp-for="Qualification" class="form-control" placeholder="e.g.specialist" />
+                            <span asp-validation-for="Qualification" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Specialization" class="form-label">Specialization</label>
+                            <textarea asp-for="Specialization" class="form-control" rows="3" placeholder="e.g. brain specialist"></textarea>
+                            <span asp-validation-for="Specialization" class="text-danger"></span>
+
+                        </div>
+
+                        
+
+                        <div class="mb-3">
+                            <label class="form-label">
+                                <i class="bi bi-check-circle-fill"></i> @Html.DisplayNameFor(model => model.IsActive)
+                            </label>
+                            @Html.DropDownListFor(model => model.IsActive,
+                            new SelectList(new[] {
+                                                        new { Value = true, Text = "✅ Active" },
+                                                        new { Value = false, Text = "❌ Inactive" }
+                                                        }, "Value", "Text"),
+                                                        "🔽 Select Status", new { @class = "form-select" })
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold text-dark">
+                                <i class="bi bi-person-circle"></i> User
+                            </label>
+                            <select asp-for="UserID" asp-items="@(new SelectList(ViewBag.UserList, "UserID", "UserName"))" class="form-control">
+                                <option value="">--Select User--</option>
+                            </select>
+                            <span asp-validation-for="UserID" class="text-danger"></span>
+                        </div>
+
+                        
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-outline-success btn-lg">Save Doctor</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

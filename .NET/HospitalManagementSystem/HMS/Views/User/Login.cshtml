@@ -1,0 +1,172 @@
+﻿@* @{
+    Layout = "~/Views/Shared/_Layout_Login.cshtml";
+}
+
+@model HMS.Models.UserLoginModel
+
+<main>
+    <div class="container">
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger">
+                @TempData["ErrorMessage"]
+            </div>
+        }
+        <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+                        <div class="d-flex justify-content-center py-4">
+                            <a class="logo d-flex align-items-center w-auto">
+                                <img src="~/img/logo.png" alt="">
+                                <span class="d-none d-lg-block">NiceAdmin</span>
+                            </a>
+                        </div><!-- End Logo -->
+
+                        <div class="card mb-3">
+
+                            <div class="card-body">
+
+                                <div class="pt-4 pb-2">
+                                    <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
+                                    <p class="text-center small">Enter your username & password to login</p>
+                                </div>
+
+                                <form class="row g-3 needs-validation" asp-action="UserLogin" asp-controller="User">
+
+                                    <div class="col-12">
+                                        <label for="yourUsername" class="form-label">Username</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend"></span>
+                                            <input type="text" asp-for="UserName" class="form-control" id="yourUsername">
+                                            <span asp-validation-for="UserName" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="yourPassword" class="form-label">Password</label>
+                                        <input type="password" asp-for="Password" class="form-control" id="yourPassword">
+                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
+                                            <label class="form-check-label" for="rememberMe">Remember me</label>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100" type="submit">Login</button>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="small mb-0">Don't have account? <a>Create an account</a></p>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</main><!-- End #main -->
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+} *@
+
+
+
+
+@{
+    Layout = "~/Views/Shared/_Layout_Login.cshtml";
+}
+@model HMS.Models.UserLoginModel
+
+<main>
+    <section class="login-bg d-flex flex-column align-items-center justify-content-center">
+        <div class="row justify-content-center w-100 m-0">
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow-lg border-0 rounded-4 p-4 animate__animated animate__fadeIn">
+                    <!-- Logo -->
+                    <div class="text-center mb-3">
+                        <h3 class="fw-bold text-gradient">🔐 Login</h3>
+                        <p class="text-muted small">Enter your credentials to continue</p>
+                    </div>
+
+                    <!-- Form -->
+                    <form asp-action="UserLogin" asp-controller="User" method="post" class="row g-3">
+                        <!-- Username -->
+                        <div class="col-12">
+                            <label for="yourUsername" class="form-label">Username</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light">
+                                    <i class="bi bi-person"></i>
+                                </span>
+                                <input type="text" asp-for="UserName" class="form-control" id="yourUsername" placeholder="Enter username">
+                            </div>
+                            <span asp-validation-for="UserName" class="text-danger small"></span>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="col-12">
+                            <label for="yourPassword" class="form-label">Password</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light">
+                                    <i class="bi bi-lock"></i>
+                                </span>
+                                <input type="password" asp-for="Password" class="form-control" id="yourPassword" placeholder="Enter password">
+                            </div>
+                            <span asp-validation-for="Password" class="text-danger small"></span>
+                        </div>
+
+                        <!-- Remember + Forgot -->
+                        <div class="col-12 d-flex justify-content-between align-items-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="rememberMe" name="remember">
+                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                            </div>
+                            <a href="#" class="text-decoration-none fw-bold small">Forgot Password?</a>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="col-12">
+                            <button class="btn btn-gradient w-100 py-2 d-flex align-items-center justify-content-center" type="submit">
+                                <i class="bi bi-box-arrow-in-right me-2"></i> Login
+                            </button>
+                        </div>
+
+                        <!-- Register -->
+                        <div class="col-12 text-center">
+                            <p class="small mb-0">
+                                Don’t have an account?
+                                <a asp-action="UserAddEdit" asp-controller="User" class="fw-bold text-gradient">Register</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Footer -->
+                <footer class="text-center mt-4 small text-white">
+                    <p class="mb-0">© Copyright <strong>HMS</strong>. All Rights Reserved</p>
+                    <p class="mb-0">Designed by <a href="https://your-link" target="_blank" class="text-white fw-bold">Pushti Markana</a></p>
+                </footer>
+            </div>
+        </div>
+    </section>
+</main>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+

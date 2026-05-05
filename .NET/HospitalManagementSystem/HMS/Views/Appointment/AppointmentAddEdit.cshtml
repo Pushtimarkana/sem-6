@@ -1,0 +1,118 @@
+﻿@model HMS.Models.AppointmentModel
+
+@{
+    ViewData["Title"] = "Appointment Form";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+<style>
+
+    .form-section {
+        padding: 30px;
+        border-radius: 20px;
+        background: #ffffff;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    }
+    .form-header {
+        background: linear-gradient(to right, #0d6efd, #4e9fff);
+        color: white;
+        padding: 20px;
+        border-radius: 20px 20px 0 0;
+        text-align: center;
+    }
+    .form-label {
+        font-weight: 600;
+    }
+</style>
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="form-section">
+                <div class="form-header">
+                    <h3><i class="bi bi-calendar-check-fill me-2"></i>Appointment Form</h3>
+                </div>
+
+                <form asp-controller="Appointment" asp-action="AppointmentAddEdit" method="post" class="mt-4">
+                    <input asp-for="AppointmentID" type="hidden" />
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold text-dark">
+                                <i class="bi bi-person-circle"></i> Doctor
+                            </label>
+                            <select asp-for="DoctorID" asp-items="@(new SelectList(ViewBag.DoctorList, "DoctorID", "Name"))" class="form-control">
+                                <option value="">--Select Doctor--</option>
+                            </select>
+                            <span asp-validation-for="DoctorID" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold text-dark">
+                                <i class="bi bi-person-circle"></i> Patient
+                            </label>
+                            <select asp-for="PatientID" asp-items="@(new SelectList(ViewBag.PatientList, "PatientID", "Name"))" class="form-control">
+                                <option value="">--Select Patient--</option>
+                            </select>
+                            <span asp-validation-for="PatientID" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="AppointmentDate" class="form-label">Appointment Date <i class="bi bi-calendar-event"></i></label>
+                        <input asp-for="AppointmentDate" type="datetime-local" value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")" class="form-control" />
+                        <span asp-validation-for="AppointmentDate" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="AppointmentStatus" class="form-label">Status <i class="bi bi-hourglass-split"></i></label>
+                        <select asp-for="AppointmentStatus" class="form-select">
+                            <option value="">-- Select Status --</option>
+                            <option value="Pending">Pending</option>
+                            <option value="Confirmed">Confirmed</option>
+                            <option value="Cancelled">Cancelled</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                        <span asp-validation-for="AppointmentStatus" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Description" class="form-label">Description <i class="bi bi-chat-left-dots"></i></label>
+                        <textarea asp-for="Description" class="form-control" rows="3" placeholder="Add any description..."></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="SpecialRemarks" class="form-label">Special Remarks <i class="bi bi-info-circle"></i></label>
+                        <textarea asp-for="SpecialRemarks" class="form-control" rows="2" placeholder="Any special notes..."></textarea>
+                        <span asp-validation-for="SpecialRemarks" class="text-danger"></span>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold text-dark">
+                                <i class="bi bi-person-circle"></i> User
+                            </label>
+                            <select asp-for="UserID" asp-items="@(new SelectList(ViewBag.UserList, "UserID", "UserName"))" class="form-control">
+                                <option value="">--Select User--</option>
+                            </select>
+                            <span asp-validation-for="UserID" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label asp-for="TotalConsultedAmount" class="form-label">Consultation Fee (₹) <i class="bi bi-currency-rupee"></i></label>
+                            <input asp-for="TotalConsultedAmount" class="form-control" placeholder="Enter Amount" />
+                            <span asp-validation-for="TotalConsultedAmount" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="d-grid mt-4">
+                        <button type="submit" class="btn btn-success btn-lg shadow">
+                            <i class="bi bi-save2-fill me-2"></i>Save Appointment
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

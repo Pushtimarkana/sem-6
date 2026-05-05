@@ -1,0 +1,78 @@
+﻿@using System.Data
+@model System.Data.DataTable
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="my-4 text-primary fw-bold">👨‍⚕️ Doctor List</h2>
+    <a asp-controller="Doctor" asp-action="DoctorAddEdit" class="btn btn-primary">
+        <i class="bi bi-plus-circle"></i> Add
+    </a>
+</div>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success text-center fw-semibold">@TempData["Message"]</div>
+}
+
+<div class="table-responsive rounded-4 shadow-sm border">
+    <table class="table table-bordered table-hover align-middle text-center mb-0">
+        <thead class="table-primary text-white align-middle">
+            <tr>
+                <th>Doctor ID <br><i class="bi bi-hash text-warning fs-5"></i></th>
+                <th>Name <br><i class="bi bi-person-badge fs-5 text-info"></i></th>
+                <th>Phone <br><i class="bi bi-telephone-fill fs-5 text-success"></i></th>
+                <th>Email <br><i class="bi bi-envelope-at-fill fs-5 text-danger"></i></th>
+                <th>Qualification <br><i class="bi bi-mortarboard-fill fs-5 text-primary"></i></th>
+                <th>Specialization <br><i class="bi bi-heart-pulse-fill fs-5 text-danger"></i></th>
+                <th>Is Active <br><i class="bi bi-toggle-on fs-5 text-success"></i></th>
+                <th>Created <br><i class="bi bi-calendar-plus fs-5 text-dark"></i></th>
+                <th>Modified <br><i class="bi bi-pencil-square fs-5 text-warning"></i></th>
+                <th>User ID <br><i class="bi bi-person-circle fs-5 text-secondary"></i></th>
+                <th class="col-2">Action <br><i class="bi bi-tools fs-5 text-danger"></i></th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            @foreach (DataRow dr in Model.Rows)
+            {
+                <tr>
+                    <td><span class="text-dark badge bg-primary-light rounded-circle p-2 px-3">@dr["DoctorID"]</span></td>
+                    <td>@dr["Name"]</td>
+                    <td>@dr["Phone"]</td>
+                    <td>@dr["Email"]</td>
+                    <td>@dr["Qualification"]</td>
+                    <td>@dr["Specialization"]</td>
+                    <td>
+                        <span class="badge bg-@((dr["IsActive"].ToString() == "True") ? "success" : "secondary")">
+                            @((dr["IsActive"].ToString() == "True") ? "Active" : "Inactive")
+                        </span>
+                    </td>
+                    <td>@Convert.ToDateTime(dr["Created"]).ToString("dd MMM yyyy")</td>
+                    <td>@Convert.ToDateTime(dr["Modified"]).ToString("dd MMM yyyy")</td>
+                    <td>@dr["UserID"]</td>
+                    <td>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a class="btn btn-sm btn-outline-success"
+                               asp-controller="Doctor"
+                               asp-action="DoctorEdit"
+                               asp-route-DoctorID="@dr["DoctorID"]"
+                               title="Edit">
+                                <i class="bi bi-pencil-fill"></i>
+                            </a>
+
+                            <a class="btn btn-sm btn-outline-danger"
+                               asp-controller="Doctor"
+                               asp-action="DoctorDelete"
+                               asp-route-DoctorID="@dr["DoctorID"]"
+                               onclick="return confirm('Are you sure you want to delete this doctor?');"
+                               title="Delete">
+                                <i class="bi bi-trash-fill"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

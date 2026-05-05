@@ -1,0 +1,319 @@
+/* * {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.auth-container {
+  height: 100vh;
+  background: radial-gradient(circle, #02111d, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  width: 850px;
+  height: 450px;
+  perspective: 1200px;
+}
+
+.auth-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+}
+
+
+.auth-card.register-mode .auth-inner {
+  transform: rotateY(180deg);
+}
+
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 40px #00f7ff;
+}
+
+
+.login-face {
+  background: #031e30;
+}
+
+
+.register-face {
+  transform: rotateY(180deg);
+  background: #031e30;
+}
+
+
+.welcome-panel {
+  width: 50%;
+  background: linear-gradient(135deg, #a8e5e9, #a6bfc4);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-panel h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.welcome-panel button {
+  padding: 12px 30px;
+  border: none;
+  background: black;
+  color: #00f7ff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.form-panel {
+  width: 50%;
+  background: #031e30;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  animation: fadeIn 0.8s ease;
+}
+
+.form-panel h2 {
+  margin-bottom: 20px;
+}
+
+.form-panel input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #00f7ff;
+  color: white;
+  outline: none;
+}
+
+.form-panel p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.form-panel span {
+  color: #00f7ff;
+  cursor: pointer;
+}
+
+.main-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  background: #00f7ff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ================= THEME VARIABLES ================= */
+
+/* DARK MODE (default) */
+:root {
+  --bg-main: radial-gradient(circle, #02111d, #000);
+  --card-bg: #031e30;
+  --panel-bg: linear-gradient(135deg, #a8e5e9, #a6bfc4);
+  --text-color: white;
+  --input-border: #00f7ff;
+  --btn-bg: #00f7ff;
+  --btn-text: black;
+  --shadow: 0 0 40px #00f7ff;
+}
+
+/* LIGHT MODE */
+.light-theme {
+  --bg-main: linear-gradient(135deg, #f2f6ff, #ffffff);
+  --card-bg: #ffffff;
+  --panel-bg: linear-gradient(135deg, #4facfe, #00f2fe);
+  --text-color: #111;
+  --input-border: #2196f3;
+  --btn-bg: #2196f3;
+  --btn-text: white;
+  --shadow: 0 0 30px rgba(0,0,0,0.15);
+}
+
+/* ================= CONTAINER ================= */
+
+.auth-container {
+  height: 100vh;
+  background: var(--bg-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================= CARD ================= */
+
+.auth-card {
+  width: 850px;
+  height: 450px;
+  perspective: 1200px;
+}
+
+.auth-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+}
+
+/* rotate card */
+.auth-card.register-mode .auth-inner {
+  transform: rotateY(180deg);
+}
+
+/* ================= FACES ================= */
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+/* LOGIN FACE */
+.login-face {
+  background: var(--card-bg);
+}
+
+/* REGISTER FACE */
+.register-face {
+  transform: rotateY(180deg);
+  background: var(--card-bg);
+}
+
+/* ================= PANELS ================= */
+
+.welcome-panel {
+  width: 50%;
+  background: var(--panel-bg);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-panel h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.welcome-panel button {
+  padding: 12px 30px;
+  border: none;
+  background: black;
+  color: var(--btn-bg);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* ================= FORM PANEL ================= */
+
+.form-panel {
+  width: 50%;
+  background: var(--card-bg);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  animation: fadeIn 0.8s ease;
+}
+
+.form-panel h2 {
+  margin-bottom: 20px;
+}
+
+.form-panel input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--input-border);
+  color: var(--text-color);
+  outline: none;
+}
+
+.form-panel p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.form-panel span {
+  color: var(--input-border);
+  cursor: pointer;
+}
+
+/* ================= BUTTON ================= */
+
+.main-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 20px;
+  border: none;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

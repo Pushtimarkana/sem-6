@@ -1,0 +1,565 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\controllers\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:controllers\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\models\\aichatrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:models\\aichatrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\models\\aitaskrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:models\\aitaskrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\services\\aiassignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:services\\aiassignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\services\\interfaces\\iaiassignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:services\\interfaces\\iaiassignmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\controllers\\subtaskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:controllers\\subtaskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\models\\taskcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:models\\taskcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\validators\\uservalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:validators\\uservalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\models\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:models\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\models\\userskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:models\\userskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\models\\subtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:models\\subtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\controllers\\skillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:controllers\\skillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\controllers\\labelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:controllers\\labelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\controllers\\tasklabelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:controllers\\tasklabelscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\controllers\\taskcommentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:controllers\\taskcommentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\controllers\\userskillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:controllers\\userskillscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\controllers\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:controllers\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\models\\tasklabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:models\\tasklabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\models\\taskcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:models\\taskcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\models\\labels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:models\\labels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\migrations\\taskcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:migrations\\taskcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|d:\\sem6\\advancedotnet\\workhub\\migrations\\20251216171529_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65D3029-A000-48DC-9274-B328ED9D43F2}|WorkHub.csproj|solutionrelative:migrations\\20251216171529_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AIChatRequestDTO.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\AIChatRequestDTO.cs",
+              "RelativeDocumentMoniker": "Models\\AIChatRequestDTO.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\AIChatRequestDTO.cs",
+              "RelativeToolTip": "Models\\AIChatRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T03:26:33.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TaskContext.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\TaskContext.cs",
+              "RelativeDocumentMoniker": "Models\\TaskContext.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\TaskContext.cs",
+              "RelativeToolTip": "Models\\TaskContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwCAAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-19T05:10:17.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AITaskRequestDTO.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\AITaskRequestDTO.cs",
+              "RelativeDocumentMoniker": "Models\\AITaskRequestDTO.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\AITaskRequestDTO.cs",
+              "RelativeToolTip": "Models\\AITaskRequestDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T14:05:04.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAqwGMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T13:55:28.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AIController.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\AIController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AIController.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\AIController.cs",
+              "RelativeToolTip": "Controllers\\AIController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T13:21:24.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AIAssignmentService.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Services\\AIAssignmentService.cs",
+              "RelativeDocumentMoniker": "Services\\AIAssignmentService.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Services\\AIAssignmentService.cs",
+              "RelativeToolTip": "Services\\AIAssignmentService.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAgwKkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T13:20:07.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAIAssignmentService.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Services\\Interfaces\\IAIAssignmentService.cs",
+              "RelativeDocumentMoniker": "Services\\Interfaces\\IAIAssignmentService.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Services\\Interfaces\\IAIAssignmentService.cs",
+              "RelativeToolTip": "Services\\Interfaces\\IAIAssignmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T13:18:56.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-16T12:59:11.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Models\\Role.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\Role.cs",
+              "RelativeToolTip": "Models\\Role.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwA0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T03:18:05.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "Controllers\\RegisterDTO.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\RegisterDTO.cs",
+              "RelativeToolTip": "Controllers\\RegisterDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T18:13:54.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwEgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T09:19:14.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "Models\\LoginDTO.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\LoginDTO.cs",
+              "RelativeToolTip": "Models\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T09:18:19.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T09:13:14.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-25T09:12:22.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserValidators.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Validators\\UserValidators.cs",
+              "RelativeDocumentMoniker": "Validators\\UserValidators.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Validators\\UserValidators.cs",
+              "RelativeToolTip": "Validators\\UserValidators.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T05:41:07.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserSkillsController.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\UserSkillsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserSkillsController.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\UserSkillsController.cs",
+              "RelativeToolTip": "Controllers\\UserSkillsController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAwFgAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T10:49:42.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserSkill.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\UserSkill.cs",
+              "RelativeDocumentMoniker": "Models\\UserSkill.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\UserSkill.cs",
+              "RelativeToolTip": "Models\\UserSkill.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA9wCEAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T10:48:08.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SkillsController.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\SkillsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SkillsController.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\SkillsController.cs",
+              "RelativeToolTip": "Controllers\\SkillsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T10:47:18.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Skill.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\Skill.cs",
+              "RelativeDocumentMoniker": "Models\\Skill.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\Skill.cs",
+              "RelativeToolTip": "Models\\Skill.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvxEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T10:46:21.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "NotificationsController.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\NotificationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NotificationsController.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\NotificationsController.cs",
+              "RelativeToolTip": "Controllers\\NotificationsController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwHoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T10:44:14.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TaskLabelsController.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\TaskLabelsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TaskLabelsController.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\TaskLabelsController.cs",
+              "RelativeToolTip": "Controllers\\TaskLabelsController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwD4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T10:21:13.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LabelsController.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\LabelsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LabelsController.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\LabelsController.cs",
+              "RelativeToolTip": "Controllers\\LabelsController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAADcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T10:07:46.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "TaskContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Migrations\\TaskContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\TaskContextModelSnapshot.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Migrations\\TaskContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\TaskContextModelSnapshot.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T17:30:11.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20251216171529_InitialCreate.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Migrations\\20251216171529_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251216171529_InitialCreate.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Migrations\\20251216171529_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20251216171529_InitialCreate.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAQwJcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T17:26:03.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TaskCommentsController.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\TaskCommentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TaskCommentsController.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\TaskCommentsController.cs",
+              "RelativeToolTip": "Controllers\\TaskCommentsController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAkwBwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:37:42.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SubTasksController.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\SubTasksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SubTasksController.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\SubTasksController.cs",
+              "RelativeToolTip": "Controllers\\SubTasksController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwCUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:34:39.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TasksController.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\TasksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\TasksController.cs",
+              "RelativeToolTip": "Controllers\\TasksController.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAwwHUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T14:18:53.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAYwHoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T13:51:48.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "Controllers\\RolesController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T03:45:57.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TaskLabel.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\TaskLabel.cs",
+              "RelativeDocumentMoniker": "Models\\TaskLabel.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\TaskLabel.cs",
+              "RelativeToolTip": "Models\\TaskLabel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T05:59:52.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Labels.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\Labels.cs",
+              "RelativeDocumentMoniker": "Models\\Labels.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\Labels.cs",
+              "RelativeToolTip": "Models\\Labels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T05:58:37.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "TaskComment.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\TaskComment.cs",
+              "RelativeDocumentMoniker": "Models\\TaskComment.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\TaskComment.cs",
+              "RelativeToolTip": "Models\\TaskComment.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T05:57:58.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SubTask.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\SubTask.cs",
+              "RelativeDocumentMoniker": "Models\\SubTask.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\SubTask.cs",
+              "RelativeToolTip": "Models\\SubTask.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAA2wCoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T05:57:19.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Task.cs",
+              "DocumentMoniker": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\Task.cs",
+              "RelativeDocumentMoniker": "Models\\Task.cs",
+              "ToolTip": "D:\\Sem6\\AdvanceDotNET\\WorkHub\\Models\\Task.cs",
+              "RelativeToolTip": "Models\\Task.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAwwC8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T05:55:12.566Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

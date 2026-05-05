@@ -1,0 +1,55 @@
+﻿@model HMS.Models.DoctorDepartmentModel
+
+@{
+    ViewData["Title"] = "Doctor Department Form";
+}
+
+
+<div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-8">
+            <div class="card shadow rounded-4 border-0">
+                <div class="card-header bg-primary text-white text-center rounded-top-4">
+                    <h4 class="mb-0">DoctorDepartment Form</h4>
+                </div>
+                <div class="card-body">
+
+                    <form asp-controller="DoctorDepartment" asp-action="DoctorDepartmentAddEdit" method="post">
+                        
+                        <input asp-for="DoctorDepartmentID" type="hidden" />
+
+                        <div class="mb-3">
+                            <label asp-for="DoctorID" class="form-label">@Html.DisplayNameFor(model => model.DoctorID)</label>
+                            @Html.TextBoxFor(model => model.DoctorID, new { @class = "form-control", placeholder = "Enter DoctorID" })
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="DepartmentID" class="form-label">@Html.DisplayNameFor(model => model.DepartmentID)</label>
+                            @Html.TextBoxFor(model => model.DepartmentID, new { @class = "form-control", placeholder = "Enter DepartmentID" })
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold text-dark">
+                                <i class="bi bi-person-circle"></i> User
+                            </label>
+                            <select asp-for="UserID" asp-items="@(new SelectList(ViewBag.UserList, "UserID", "UserName"))" class="form-control">
+                                <option value="">--Select User--</option>
+                            </select>
+                            <span asp-validation-for="UserID" class="text-danger"></span>
+                        </div>
+                        @* <div class="mb-3">
+                            <label asp-for="UserID" class="form-label">@Html.DisplayNameFor(model => model.UserID)</label>
+                            @Html.TextBoxFor(model => model.UserID, new { @class = "form-control", placeholder = "Enter UserID" })
+                        </div> *@
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success btn-lg">Save DoctorDepartment</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
