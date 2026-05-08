@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['pothole']
+
+roboflow:
+  workspace: pushtis-workspace
+  project: pothole-detection_2-g8jkp
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/pushtis-workspace/pothole-detection_2-g8jkp/dataset/1
